@@ -261,3 +261,13 @@ header .navbar a:hover {
 }
 
 
+/* SECTION 3 */
+
+.sec3 {
+  background-color: antiquewhite;
+  z-index: 99;
+}
+
+.sec3 img {
+  filter: drop-shadow(0px 8px 10px rgba(254, 198, 117, 0.75));
+}
