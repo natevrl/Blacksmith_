@@ -5,9 +5,11 @@ header {
 		height: 60px;
 		margin: 30px auto;
 		display: flex;
-		justify-content: space-around;
-		align-items: baseline;
+		justify-content: space-evenly;
+		background: red;
 		a {
+			display: flex;
+			align-items: center;
 			font-family: $font1-p;
 			font-size: 20px;
 			color: #fff;

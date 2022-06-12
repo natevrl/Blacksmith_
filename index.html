@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Atelier Forgeron 1889</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/45e38e596f.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -13,22 +14,21 @@
   <header>
     <nav class="navbar">
       <img src="/assets/img/logo.png" alt="logo forgeron">
-      <a href="#">ACCUIEL</a>
-      <a href="#">QUI SOMMES-NOUS ?</a>
+      <a href="#accueil">ACCUIEL</a>
+      <a href="#bienvenue">QUI SOMMES-NOUS ?</a>
       <a href="#">NOS SERVICES</a>
       <a href="#">NOS MÉTHODES</a>
     </nav>
   </header>
 
   <main>
-
-    <section class="sect1">
-      <div class="contenair">
+    <section class="sec1" id="accueil">
+      <div class="sec1__contenair">
         <div class="contenair__left">
           <h1>LA FORGE MYSTIQUE</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ratione expedita est assumenda nihil
             libero in possimus provident officia dicta.</p>
-          <button>Découvrir</button>
+            <a href="#bienvenue"><button>Découvrir</button></a>
         </div>
         <div class="contenair__right">
           <img src="assets/img/porte.png" alt="main image door">
@@ -36,7 +36,24 @@
       </div>
     </section>
 
+    <div id="bienvenue" style="postion: relative; top: -100px"></div>
+    <section class="sec2" id="bienvenue">
+      <div class="sec2__contenair">
+        <div class="sec2__card">
+          <div class="card__left">
+            <img src="/assets/img/fondrie.png" alt="card fonderie">
+          </div>
+          <div class="card__right">
+            <h4>BIENVENUE DANS</h4>
+            <h1>LA FORGE MYSTIQUE</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quasi obcaecati excepturi molestias sit numquam, enim debitis? Quia, odio veniam.</p>
+          </div>
+          <a href="#" class="card__arrow"></a>
+        </div>
+      </div>
+    </section>
   </main>
+  <footer style="height: 100vh;"></footer>
 
 </body>
 
