@@ -1,0 +1,82 @@
+.sec2
+    margin: 90px 0
+
+    .sec2__contenair
+        display: flex
+        align-items: center
+        max-width: 1500px
+        margin: 0px auto
+
+        .sec2__card 
+            position: relative
+            display: flex
+            flex-flow: row wrap
+            justify-content: center
+            align-items: center
+            width: 90%
+            background-color: #353448
+            margin: 0 auto
+            border-radius: 10px
+            animation: cardShadow 4s infinite ease-in-out
+
+            .card__arrow::before 
+                content: "\f107"
+                font-family: "fontAwesome"
+                position: absolute
+                width: 60px
+                height: 60px
+                left: 50%
+                top: 100%
+                transform: translate(-50%, -50%)
+                font-size: 40px
+                background-color: #fec675
+                color: #050505
+                border-radius: 50px 
+                display: flex
+                justify-content: center
+                align-items: center
+
+                @keyframes cardShadow 
+                    0% 
+                        box-shadow: 0px 0px 20px 10px #fec675
+                    20% 
+                        box-shadow: 0px 0px 20px 0px #fec675
+                    40% 
+                        box-shadow: 0px 0px 20px 5px #fec675
+                    70% 
+                        box-shadow: 0px 0px 20px -10px #fec675
+                    100% 
+                        box-shadow: 0px 0px 20px 10px #fec675
+
+            .card__left 
+                margin-right: 80px
+
+            .card__left img
+                position: relative
+                top: -70px
+
+            .card__right 
+                max-width: 500px
+
+                h4 
+                color: #fec675
+                letter-spacing: 2px
+
+                h1 
+                    color: #fff
+                    font-size: 3.5em
+                    margin-bottom: 30px
+
+                p 
+                    color: #b1b1b1
+
+            @media screen and (max-width: 600px)
+                .card__right 
+                    text-align: center
+                    margin-bottom: 50px
+
+                    h1
+                        font-size: 32px
+
+                    p
+                        margin: 0 30px

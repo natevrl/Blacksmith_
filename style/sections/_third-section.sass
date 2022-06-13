@@ -1,0 +1,73 @@
+.sec3 
+	background-color: antiquewhite
+	z-index: 99
+	overflow: hidden
+	background-image: url(/assets/img/bg.png)
+	background-position: center
+	background-attachment: fixed
+	background-size: cover 
+	display: flex
+	flex-direction: column
+	align-items: center
+
+	.pique-down 
+		filter: drop-shadow(0px 8px 5px rgba(254, 198, 117, 0.40))
+
+	.pique-up 
+		filter: drop-shadow(0px -8px 5px rgba(254, 198, 117, 0.40))
+
+	.sec3__title h4 
+		color: #fec675
+		font-size: 24px
+
+	.sec3__title h1 
+		color: #fff
+		font-size: 64px
+
+	.sec3__contenair 
+		display: flex
+		flex-flow: row
+		max-width: 1500px
+		margin: 0 auto
+
+		h2 
+			color: #fec675
+			margin-bottom: 10px
+
+		p 
+			color: #fff
+
+		.contenair__left 
+			text-align: right
+			max-width: 350px
+
+		.contenair__right 
+			max-width: 350px
+
+		.contenair__right, .contenair__left
+			display: flex
+			flex-direction: column
+			justify-content: space-around
+
+	@media screen and (max-width: 1250px)
+		text-align: center
+		
+		.sec3__contenair
+			flex-direction: column
+
+			.top, .bot
+				margin: 25px 0
+
+			.contenair__middle
+				display: none
+
+			.contenair__left
+				text-align: center
+
+			.contenair__left, .contenair__right
+				max-width: 600px
+				margin: 0 30px
+
+	@media screen and (max-width: 600px)
+		.sec3__title h1
+				font-size: 48px

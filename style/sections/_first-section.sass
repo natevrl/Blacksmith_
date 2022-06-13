@@ -1,237 +1,58 @@
 .sec1
-  .contenair
-    display: flex
-    align-items: center
-    max-width: 1500px
-    margin: 0px auto
+	.sec1__contenair
+		display: flex
+		align-items: center
+		max-width: 1500px
+		margin: 0px auto
 
-    .contenair__left
-      h1
-        font-size: 128px
-        color: $color-near-white
-        text-shadow: 0px 0px 10px $color-near-white
+		.contenair__left
+			h1
+				font-size: 128px
+				color: $color-near-white
+				text-shadow: 0px 0px 10px $color-near-white
+				@media screen and (max-width: 1500px)
+					font-size: 96px
 
-        @media screen and (max-width: 1500px)
-          font-size: 96px
+			p
+				margin: 30px 0px
+				max-width: 600px
+				font-weight: 700
 
-      p
-        margin: 30px 0px
-        max-width: 600px
-        font-weight: 700
+			button
+				width: 300px
+				height: 65px
+				color: $color1-purple
+				background-color: $color2-orange
+				font-weight: 700
+				border: none
+				border-radius: 15px
+				font-size: 20px
+				letter-spacing: 1px
+				box-shadow: 0px 0px 10px $color-black
 
-      button
-        width: 300px
-        height: 65px
-        color: $color1-purple
-        background-color: $color2-orange
-        font-weight: 700
-        border: none
-        border-radius: 15px
-        font-size: 20px
-        letter-spacing: 1px
-        box-shadow: 0px 0px 10px $color-black
+	@media screen and (max-width: 1300px)
+		.sec1__contenair
+			flex-direction: column
+			margin-top: 50px
 
+			.contenair__left
+				display: flex
+				flex-direction: column
+				align-items: center
+				text-align: center
 
-  @media screen and (max-width: 1300px)
-    .contenair
-      flex-direction: column
-      margin-top: 150px
+			.contenair__right
+				display: flex
+				justify-content: center
 
-      .contenair__left
-        display: flex
-        flex-direction: column
-        align-items: center
-        text-align: center
+				img
+					margin-top: 50px
+					width: 80%
 
-      .contenair__right
-        display: flex
-        justify-content: center
+	@media screen and (max-width: 650px)
+		.sec1__contenair .contenair__left h1
+			font-size: 4em
 
-        img
-          margin-top: 50px
-          width: 80%
+			p
+				margin: 30px 40px
 
-
-  @media screen and (max-width: 650px)
-    .contenair .contenair__left h1
-      font-size: 4em
-
-      p
-        margin: 30px 40px
-
-
-
-
-/* MODIFS CSS NO SASS 42 */
-
-// header .navbar {
-//   max-width: 900px;
-//   margin: 30px auto;
-//   display: flex;
-//   justify-content: space-evenly;
-// }
-
-// header .navbar a {
-//   display: flex;
-//   align-items: center;
-//   font-family: "Poppins";
-//   font-size: 20px;
-//   color: #fff;
-// }
-
-// header .navbar a:hover {
-//   color: #fec675;
-// }
-
-// @media screen and (max-width: 750px) {
-//   header .navbar  a{
-//     font-size: 12px;
-//   }
-//   header .navbar img {
-//     width: 50px;
-//   }
-// } 
-
-  
-// /* SECTION 2 */
-
-// .sec2 {
-//   margin: 90px 0;
-// }
-
-// .sec2 .sec2__contenair {
-//   display: flex;
-//   align-items: center;
-//   max-width: 1500px;
-//   margin: 0px auto;
-// }
-
-// .sec2 .sec2__card {
-//   position: relative;
-//   display: flex;
-//   flex-flow: row wrap;
-//   justify-content: center;
-//   align-items: center;
-//   width: 90%;
-//   background-color: #353448;
-//   margin: 0 auto;
-//   border-radius: 10px;
-//   animation: cardShadow 4s infinite ease-in-out;
-// }
-
-// .sec2 .sec2__card .card__arrow::before {
-//   content: "\f107";
-//   font-family: "fontAwesome";
-//   position: absolute;
-//   width: 60px;
-//   height: 60px;
-//   left: 50%;
-//   top: 100%;
-//   transform: translate(-50%, -50%);
-//   font-size: 40px;
-//   background-color: #fec675;
-//   color: #050505;
-//   border-radius: 50px ;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-// }
-
-
-
-// @keyframes cardShadow {
-//   0% {
-//     box-shadow: 0px 0px 30px 20px #fec675;
-//   }
-//   20% {
-//     box-shadow: 0px 0px 30px 0px #fec675;
-//   }
-//   40% {
-//     box-shadow: 0px 0px 30px 10px #fec675;
-//   }
-//   70% {
-//     box-shadow: 0px 0px 30px -10px #fec675;
-//   }
-//   100% {
-//     box-shadow: 0px 0px 30px 20px #fec675;
-//   }
-// }
-
-
-// .sec2 .sec2__card .card__left {
-//   margin-right: 80px;
-// }
-
-// .sec2 .sec2__card .card__left img{
-//   position: relative;
-//   top: -70px;
-// }
-
-// .sec2 .sec2__card .card__right {
-//   max-width: 500px;
-// }
-
-// .sec2 .sec2__card h4 {
-//   color: #fec675;
-//   letter-spacing: 2px;
-// }
-
-// .sec2 .sec2__card h1 {
-//   color: #fff;
-//   font-size: 3.5em;
-//   margin-bottom: 30px;
-// }
-
-// .sec2 .sec2__card p {
-//   color: #b1b1b1;
-// }
-
-
-/* SECTION 3 */
-
-// .sec3 {
-//   background-color: antiquewhite;
-//   z-index: 99;
-//   overflow: hidden;
-//   background-image: url(/assets/img/bg.png);
-//   background-position: center;
-//   background-attachment: fixed;
-//   background-size: cover; 
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-// }
-
-// .sec3 .pique-svg {
-//   filter: drop-shadow(0px 8px 5px rgba(254, 198, 117, 0.75));
-// }
-
-// .sec3 .sec3__title h4 {
-//   color: #fec675;
-//   font-size: 24px;
-// }
-
-// .sec3 .sec3__title h1 {
-//   color: #fff;
-//   font-size: 64px;
-// }
-
-// .sec3 .sec3__contenair {
-//   display: flex;
-//   flex-flow:  row wrap;
-//   max-width: 1500px;
-//   margin: 0 auto;
-// }
-
-// .sec3 .contenair__left {
-//   text-align: right;
-//   max-width: 350px;
-// }
-
-// .sec3 .sec3__contenair h2 {
-//   color: #fec675;
-// }
-
-// .sec3 .sec3__contenair p {
-//   color: #fff;
-// }
