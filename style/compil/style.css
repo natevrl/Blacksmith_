@@ -1,0 +1,149 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+body {
+  background-color: #1d1e31;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  font-family: "GodOfWar";
+}
+
+p, button {
+  color: #888;
+  font-family: "Poppins";
+}
+
+.sec1 .contenair {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1500px;
+  margin: 0px auto;
+}
+
+.sec1 .contenair .contenair__left h1 {
+  font-size: 128px;
+  color: #fafafa;
+  text-shadow: 0px 0px 10px #fafafa;
+}
+
+@media screen and (max-width: 1500px) {
+  .sec1 .contenair .contenair__left h1 {
+    font-size: 96px;
+  }
+}
+
+.sec1 .contenair .contenair__left p {
+  margin: 30px 0px;
+  max-width: 600px;
+  font-weight: 700;
+}
+
+.sec1 .contenair .contenair__left button {
+  width: 300px;
+  height: 65px;
+  color: #1d1e31;
+  background-color: #fec675;
+  font-weight: 700;
+  border: none;
+  border-radius: 15px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  -webkit-box-shadow: 0px 0px 10px #050505;
+          box-shadow: 0px 0px 10px #050505;
+}
+
+@media screen and (max-width: 1300px) {
+  .sec1 .contenair {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 150px;
+  }
+  .sec1 .contenair .contenair__left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .sec1 .contenair .contenair__right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .sec1 .contenair .contenair__right img {
+    margin-top: 50px;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .sec1 .contenair .contenair__left h1 {
+    font-size: 4em;
+  }
+  .sec1 .contenair .contenair__left h1 p {
+    margin: 30px 40px;
+  }
+}
+
+/* MODIFS CSS NO SASS 42 */
+/* SECTION 3 */
+header .navbar {
+  max-width: 1200px;
+  height: 60px;
+  margin: 30px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background: red;
+}
+
+header .navbar a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Poppins";
+  font-size: 20px;
+  color: #fff;
+}
+/*# sourceMappingURL=style.css.map */
