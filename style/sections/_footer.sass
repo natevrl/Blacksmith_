@@ -1,7 +1,41 @@
 footer
+    background: #353448
+    margin-top: 120px
     .footer__contenair
         display: flex
-        flex-flow: row wrap
         justify-content: space-evenly
         max-width: 1500px
         margin: 0px auto
+
+        .footer__left, .footer__right
+            margin: 100px 0
+            h1
+                color: $color2-orange
+                margin-bottom: 20px
+
+        .footer__left
+            display: flex
+            flex-direction: column
+            text-align: right
+            line-height: 34px
+            a
+                color: #fff
+                font-family: $font1-p
+            a:hover
+                color: $color2-orange
+
+        .footer__right
+            p
+                max-width: 450px
+                color: #fff
+        @media screen and (max-width: 760px) 
+            flex-direction: column
+            align-items: center
+            .footer__left, .footer__right
+                margin: 0 40px;
+                text-align: center;
+                line-break: anywhere;
+            .footer__left
+                margin: 80px 0;
+            .footer__right
+                margin-bottom: 80px;
