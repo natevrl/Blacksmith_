@@ -1,4 +1,6 @@
 .sec1
+	width: 95%
+	margin: 0 auto
 	.sec1__contenair
 		display: flex
 		align-items: center
@@ -46,13 +48,15 @@
 				justify-content: center
 
 				img
-					margin-top: 50px
-					width: 80%
+					display: none
 
 	@media screen and (max-width: 650px)
-		.sec1__contenair .contenair__left h1
-			font-size: 4em
-
+		.sec1__contenair .contenair__left
+			width: 100%
+			h1
+				font-size: 48px
 			p
 				margin: 30px 40px
+			button
+				width: 250px
 

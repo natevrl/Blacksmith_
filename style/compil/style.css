@@ -69,6 +69,11 @@ header .navbar a:hover {
   }
 }
 
+.sec1 {
+  width: 95%;
+  margin: 0 auto;
+}
+
 .sec1 .sec1__contenair {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -142,22 +147,27 @@ header .navbar a:hover {
             justify-content: center;
   }
   .sec1 .sec1__contenair .contenair__right img {
-    margin-top: 50px;
-    width: 80%;
+    display: none;
   }
 }
 
 @media screen and (max-width: 650px) {
-  .sec1 .sec1__contenair .contenair__left h1 {
-    font-size: 4em;
+  .sec1 .sec1__contenair .contenair__left {
+    width: 100%;
   }
-  .sec1 .sec1__contenair .contenair__left h1 p {
+  .sec1 .sec1__contenair .contenair__left h1 {
+    font-size: 48px;
+  }
+  .sec1 .sec1__contenair .contenair__left p {
     margin: 30px 40px;
+  }
+  .sec1 .sec1__contenair .contenair__left button {
+    width: 250px;
   }
 }
 
 .sec2 {
-  margin: 90px 0;
+  margin: 150px 0;
 }
 
 .sec2 .sec2__contenair {
@@ -290,16 +300,36 @@ header .navbar a:hover {
   color: #b1b1b1;
 }
 
-@media screen and (max-width: 600px) {
-  .sec2 .sec2__contenair .sec2__card .card__right {
+@media screen and (max-width: 1250px) {
+  .sec2 .sec2__contenair .sec2__card {
     text-align: center;
-    margin-bottom: 50px;
+  }
+  .sec2 .sec2__contenair .sec2__card .card__left {
+    margin-right: 0;
+  }
+  .sec2 .sec2__contenair .sec2__card .card__right {
+    max-width: 750px;
+    margin: 50px 50px;
+    margin-top: -25px;
+  }
+  .sec2 .sec2__contenair .sec2__card .card__right h1 {
+    font-size: 42px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .sec2 .sec2__contenair .sec2__card .card__left img {
+    width: 80%;
+  }
+  .sec2 .sec2__contenair .sec2__card .card__right {
+    margin: 50px 20px;
+    margin-top: -25px;
   }
   .sec2 .sec2__contenair .sec2__card .card__right h1 {
     font-size: 32px;
   }
   .sec2 .sec2__contenair .sec2__card .card__right p {
-    margin: 0 30px;
+    margin: 0 10px;
   }
 }
 
@@ -412,7 +442,7 @@ header .navbar a:hover {
 
 @media screen and (max-width: 600px) {
   .sec3 .sec3__title h1 {
-    font-size: 48px;
+    font-size: 44px;
   }
 }
 /*# sourceMappingURL=style.css.map */

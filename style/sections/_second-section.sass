@@ -1,5 +1,5 @@
 .sec2
-    margin: 90px 0
+    margin: 150px 0
 
     .sec2__contenair
         display: flex
@@ -70,13 +70,23 @@
                 p 
                     color: #b1b1b1
 
+            @media screen and (max-width: 1250px)
+                text-align: center
+                .card__left
+                    margin-right: 0
+                .card__right
+                    max-width: 750px
+                    margin: 50px 50px
+                    margin-top: -25px
+                    h1
+                        font-size: 42px
             @media screen and (max-width: 600px)
-                .card__right 
-                    text-align: center
-                    margin-bottom: 50px
-
+                .card__left img
+                    width: 80%
+                .card__right
+                    margin: 50px 20px
+                    margin-top: -25px
                     h1
                         font-size: 32px
-
                     p
-                        margin: 0 30px
+                        margin: 0 10px
