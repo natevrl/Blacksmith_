@@ -1,0 +1,101 @@
+.sec4
+    .sec4__center-box
+        display: flex
+        justify-content: center
+        margin-bottom: 60px
+
+        .sec4__title
+            h4
+                color: $color2-orange
+                font-size: 24px
+            
+            h1
+                color: #fff
+                font-size: 64px  
+    .sec4__contenair
+        display: flex
+        flex-flow: row wrap
+        justify-content: space-evenly
+        max-width: 1500px
+        margin: 0px auto
+
+        .sec4__card
+            height: 550px
+            width: 400px
+            background-color: #353448
+            border-radius: 15px
+            margin: 20px
+            overflow: hidden
+            .card__top
+                position: relative
+                top: -25px
+                background: linear-gradient(to top, #f12711, #f5af19)
+                img
+                    position: relative;
+                    top: 45px;
+                    left: 130px;
+                
+            .card__bot
+                position: relative
+                top: 100px
+                margin: 0 20px
+                text-align: center
+
+                .card__description
+                    line-break: anywhere
+                    text-align: center
+                    margin: 30px 10px 0 10px
+                    font-family: $font1-p
+                    color: #b1b1b1
+                
+                h1
+                    color: #fff
+                    font-size: 32px
+                h4
+                    color: $color2-orange
+                    font-weight: bold
+                    font-size: 24px
+
+        .sec4__card:nth-child(1)
+            .card__top
+                position: relative
+                top: -100px
+                height: 275px
+                background: linear-gradient(to top, #f12711, #f5af19)
+                transform: skew(0deg, -25deg)
+                img
+                    position: relative
+                    top: 70px
+                    left: 5px
+                    transform: skew(0deg, 25deg)
+                
+            .card__bot
+                position: relative
+                top: -70px
+                h1, h4
+                    text-align: right
+
+        .sec4__card:nth-child(3)
+            .card__top
+                position: relative
+                top: -100px
+                height: 275px
+                background: linear-gradient(to top, #f12711, #f5af19)
+                transform: skew(0deg, 25deg)
+                img
+                    position: relative
+                    top: 70px;
+                    left: 190px;
+                    transform: skew(0deg, -25deg)
+                
+            .card__bot
+                position: relative
+                top: -70px
+                h1, h4
+                    text-align: left
+
+
+
+
+
+

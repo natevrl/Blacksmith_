@@ -445,4 +445,141 @@ header .navbar a:hover {
     font-size: 44px;
   }
 }
+
+.sec4 .sec4__center-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 60px;
+}
+
+.sec4 .sec4__center-box .sec4__title h4 {
+  color: #fec675;
+  font-size: 24px;
+}
+
+.sec4 .sec4__center-box .sec4__title h1 {
+  color: #fff;
+  font-size: 64px;
+}
+
+.sec4 .sec4__contenair {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  max-width: 1500px;
+  margin: 0px auto;
+}
+
+.sec4 .sec4__contenair .sec4__card {
+  height: 550px;
+  width: 400px;
+  background-color: #353448;
+  border-radius: 15px;
+  margin: 20px;
+  overflow: hidden;
+}
+
+.sec4 .sec4__contenair .sec4__card .card__top {
+  position: relative;
+  top: -25px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#f12711), to(#f5af19));
+  background: linear-gradient(to top, #f12711, #f5af19);
+}
+
+.sec4 .sec4__contenair .sec4__card .card__top img {
+  position: relative;
+  top: 45px;
+  left: 130px;
+}
+
+.sec4 .sec4__contenair .sec4__card .card__bot {
+  position: relative;
+  top: 100px;
+  margin: 0 20px;
+  text-align: center;
+}
+
+.sec4 .sec4__contenair .sec4__card .card__bot .card__description {
+  line-break: anywhere;
+  text-align: center;
+  margin: 30px 10px 0 10px;
+  font-family: "Poppins";
+  color: #b1b1b1;
+}
+
+.sec4 .sec4__contenair .sec4__card .card__bot h1 {
+  color: #fff;
+  font-size: 32px;
+}
+
+.sec4 .sec4__contenair .sec4__card .card__bot h4 {
+  color: #fec675;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.sec4 .sec4__contenair .sec4__card:nth-child(1) .card__top {
+  position: relative;
+  top: -100px;
+  height: 275px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#f12711), to(#f5af19));
+  background: linear-gradient(to top, #f12711, #f5af19);
+  -webkit-transform: skew(0deg, -25deg);
+          transform: skew(0deg, -25deg);
+}
+
+.sec4 .sec4__contenair .sec4__card:nth-child(1) .card__top img {
+  position: relative;
+  top: 70px;
+  left: 5px;
+  -webkit-transform: skew(0deg, 25deg);
+          transform: skew(0deg, 25deg);
+}
+
+.sec4 .sec4__contenair .sec4__card:nth-child(1) .card__bot {
+  position: relative;
+  top: -70px;
+}
+
+.sec4 .sec4__contenair .sec4__card:nth-child(1) .card__bot h1, .sec4 .sec4__contenair .sec4__card:nth-child(1) .card__bot h4 {
+  text-align: right;
+}
+
+.sec4 .sec4__contenair .sec4__card:nth-child(3) .card__top {
+  position: relative;
+  top: -100px;
+  height: 275px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#f12711), to(#f5af19));
+  background: linear-gradient(to top, #f12711, #f5af19);
+  -webkit-transform: skew(0deg, 25deg);
+          transform: skew(0deg, 25deg);
+}
+
+.sec4 .sec4__contenair .sec4__card:nth-child(3) .card__top img {
+  position: relative;
+  top: 70px;
+  left: 190px;
+  -webkit-transform: skew(0deg, -25deg);
+          transform: skew(0deg, -25deg);
+}
+
+.sec4 .sec4__contenair .sec4__card:nth-child(3) .card__bot {
+  position: relative;
+  top: -70px;
+}
+
+.sec4 .sec4__contenair .sec4__card:nth-child(3) .card__bot h1, .sec4 .sec4__contenair .sec4__card:nth-child(3) .card__bot h4 {
+  text-align: left;
+}
 /*# sourceMappingURL=style.css.map */
